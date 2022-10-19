@@ -30,7 +30,7 @@ const handleDelete = () => {
     setAllComments([])    
   })} catch(err){
     if (err.response) {
-      alert('Error -- server issues!')
+      alert('Error -- Server issues!')
   }
   }
 }

@@ -34,7 +34,7 @@ const CommentForm = ({addInfo}) => {
             
           })} catch(err){
             if (err.response) {
-              alert(err.response.data)
+              alert('Error! -- Server issues')
           }
           }
 
