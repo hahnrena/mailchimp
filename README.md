@@ -10,7 +10,7 @@ $ npm install
 then cd client
 $ npm install
 
-
+then run:
 $ npm run dev
 ```
 
