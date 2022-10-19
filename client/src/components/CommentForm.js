@@ -5,8 +5,8 @@ import 'animate.css';
 
 import {
   NameTitle,
-  NameTextArea,
-  CommentTextArea,
+  NameTextarea,
+  CommentTextarea,
   CommentButton
 } from "./CommentFormStyles";
 
@@ -53,8 +53,8 @@ const CommentForm = ({addInfo}) => {
         <div>
             <form style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '100%' }} data-testref="submitButton" onSubmit={handleSubmit}>
                 <NameTitle>Name</NameTitle>
-                <NameTextArea required type="text" placeholder="Name" name="name" onChange={handleChange} />
-                <CommentTextArea required type="text" placeholder="Comment" name="comment" onChange={handleChange} />
+                <NameTextarea required type="text" placeholder="Name" name="name" onChange={handleChange} />
+                <CommentTextarea required type="text" placeholder="Comment" name="comment" onChange={handleChange} />
                 <CommentButton data-testref="deleteButton">Comment</CommentButton>
             </form>
         </div>

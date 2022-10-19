@@ -5,7 +5,7 @@ color: #ffe01b;
 text-align: center;
 `
 
-export const NameTextArea = styled.textarea`
+export const NameTextarea = styled.textarea`
   justify-self: center; 
   margin-bottom: 30px;
   width: 300px;
@@ -18,7 +18,7 @@ export const NameTextArea = styled.textarea`
     border: 3px solid #f25f25;
 }
 `
-export const CommentTextArea = styled.textarea`
+export const CommentTextarea = styled.textarea`
   justify-self: center; 
   margin-bottom: 30px;
   width: 300px;
