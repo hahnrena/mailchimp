@@ -5,8 +5,8 @@ import 'animate.css';
 
 import {
   NameTitle,
-  NameInput,
-  CommentInput,
+  NameTextarea,
+  CommentTextarea,
   CommentButton
 } from "./CommentFormStyles";
 
@@ -29,10 +29,14 @@ const CommentForm = ({addInfo}) => {
             baseURL: "/api"
           })
           
-          api.post('/createComment', { name: formData.name, message: formData.comment }).then((response) => {
+          try {api.post('/createComment', { name: formData.name, message: formData.comment }).then((response) => {
             setFormData(response.data);
             
-          })
+          })} catch(err){
+            if (err.response) {
+              alert(err.response.data)
+          }
+          }
 
           Store.addNotification({ title: "New Comment", message: `${formData.name} added a new comment`, type: 'success', container: 'top-right', insert: 'top', animationIn: ["animate__animated", "animate__fadeIn"],
           animationOut: ["animate__animated", "animate__fadeOut"],
@@ -49,8 +53,8 @@ const CommentForm = ({addInfo}) => {
         <div>
             <form style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '100%' }} data-testref="submitButton" onSubmit={handleSubmit}>
                 <NameTitle>Name</NameTitle>
-                <NameInput required type="text" placeholder="Name" name="name" onChange={handleChange} />
-                <CommentInput required type="text" placeholder="Comment" name="comment" onChange={handleChange} />
+                <NameTextarea required type="text" placeholder="Name" name="name" onChange={handleChange} />
+                <CommentTextarea required type="text" placeholder="Comment" name="comment" onChange={handleChange} />
                 <CommentButton data-testref="deleteButton">Comment</CommentButton>
             </form>
         </div>

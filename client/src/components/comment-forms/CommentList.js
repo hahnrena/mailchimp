@@ -26,9 +26,13 @@ const fetchData = async () => {
   }, [addInfo])
 
 const handleDelete = () => {
-  api.delete('/deleteComments').then((response) => {
+  try{api.delete('/deleteComments').then((response) => {
     setAllComments([])    
-  })
+  })} catch(err){
+    if (err.response) {
+      alert('Error -- server issues!')
+  }
+  }
 }
 
 const newAllComments = allComments.map(obj => {
