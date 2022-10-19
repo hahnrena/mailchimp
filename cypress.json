@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://localhost:3001",
+  "defaultCommandTimeout": 10000,
+  "video": false,
+  "viewportHeight": 1200,
+  "viewportWidth": 1000,
+  "component": {
+    "componentFolder": "src",
+    "testFiles": "**/*spec.{js,jsx,ts,tsx}"
+  }
+}
