@@ -12,5 +12,8 @@ $ npm install
 
 then run:
 $ npm run dev
+
+Delete package-lock.json & node_modules in main directory and client directory if there are issues then 
+proceed with the above npm install commands again
 ```
 
