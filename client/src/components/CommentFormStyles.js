@@ -6,10 +6,10 @@ text-align: center;
 `
 
 export const NameTextArea = styled.textarea`
-    justify-self: center; 
-    margin-bottom: 30px;
-    width: 300px;
-    box-sizing: border-box;
+  justify-self: center; 
+  margin-bottom: 30px;
+  width: 300px;
+  box-sizing: border-box;
   border: 3px solid #241c15;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -19,11 +19,10 @@ export const NameTextArea = styled.textarea`
 }
 `
 export const CommentTextArea = styled.textarea`
-    justify-self: center; 
-    margin-bottom: 30px;
-    width: 300px;
-    
-    box-sizing: border-box;
+  justify-self: center; 
+  margin-bottom: 30px;
+  width: 300px;
+  box-sizing: border-box;
   border: 3px solid #241c15;
   -webkit-transition: 0.5s;
   transition: 0.5s;

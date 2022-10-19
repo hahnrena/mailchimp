@@ -53,9 +53,7 @@ const newAllComments = allComments.map(obj => {
         <><CardWrapper key={elem.id}>
           <CardTextWrapper>
           <CardTextTitle>{elem.message}</CardTextTitle>
-          
           </CardTextWrapper> 
-          
         </CardWrapper>
         <CardTextDate>{elem.name} at {elem.created}</CardTextDate></>  
       ))}
